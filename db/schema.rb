@@ -11,27 +11,7 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema[7.1].define(version: 2024_01_25_065753) do
-  create_schema "postgis"
-
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
   enable_extension "postgis"
-  enable_extension "postgis_raster"
-
-  create_table "vic_lgas", force: :cascade do |t|
-    t.string "pfi"
-    t.string "lga_code"
-    t.string "lga_name"
-    t.string "gaz_lga"
-    t.string "gazregn"
-    t.string "abslgacode"
-    t.date "pfi_cr"
-    t.integer "ufi"
-    t.date "ufi_cr"
-    t.integer "ufi_old"
-    t.geometry "geom", limit: {:srid=>0, :type=>"geometry"}
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
 end
