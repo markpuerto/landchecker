@@ -47,4 +47,4 @@ group :development do
 end
 
 gem "rubocop-rails", require: false
-
+gem "activerecord-postgis-adapter"
