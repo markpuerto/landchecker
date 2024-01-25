@@ -60,3 +60,9 @@ I also created the StandardError class to streamline the error handling for the 
 - index (/lgas)
 
 For pagination, by default it returns 10 results per page. Page is set to 1 if nothing is set. In the JSON object, a pagination object is added to help navigate with the urls for next and previous pages.
+
+##### Disclaimer
+
+The following are not added and not part of the exam but can be added if needed:
+- Testing
+- Authentication
